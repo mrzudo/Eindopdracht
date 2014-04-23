@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+        <head>
+            <title>Opdracht 2</title>
+            <meta charset="utf-8"/>
+            <meta name="description" content="Opdracht 2"/>
+            <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+            <meta name="keywords" content="Opdracht 2, Frontend, HvA"/>
+            <link rel="stylesheet" type="text/css" href="css/style1.css" />
+            <script src="js/jquery-1.11.0.min.js"></script>
+            <script src="js/modernizr.js"></script>
+            <script src="js/myjs.js"></script>
+        </head>
+
+        <body>
+
+            <header>  
+                <a href="Opdracht1.html"><img src="img/cmdhead.png" alt="logo"></a>  
+                <nav> 
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="Opdracht1.html">Opleiding</a>
+                            <ul>
+                                <li><a href="#">Visie &amp; Beleid</a></li>
+                                <li><a href="#">Opbouw Studieprogramma</a></li>
+                                <li><a href="#">Competenties</a></li>
+                                <li><a href="#">Diploma</a></li>
+                                <li><a href="#">Beroepen</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Onderwijsprogramma</a></li>
+                        <li><a href="#">Organisatie</a></li>
+                        <li><a href="Opdracht2.html">Stages en Projecten</a></li>
+                    </ul>
+
+                </nav>
+
+            </header>
+                      
+            <section>
+                <article>
+                        <h1>Aanmelden</h1>
+                        <p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+                        Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+                        <i>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</i>
+                        <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+                        Voor vragen of opmerkingen kunt u <a href="url">contact</a> met ons opnemen.</p>
+                </article>
+
+                <form>
+                    <fieldset>
+                        <legend>Contactgegevens</legend>
+                        
+                        <label for="name">Naam</label>
+                        <input type="text" placeholder="Voor en achternaam" required id="name"/>
+                        
+                        <label for="email">E-mail</label>
+                        <input type="email" placeholder="voorbeeld@abc.com" id="email"/>
+                        
+                        <label for="street">Straat</label>
+                        <input type="text" required id="street"/>
+                        
+                        <label for="number">Huisnummer</label>
+                        <input type="text" required id="number"/>
+                        
+                        <label for="zip">Postcode</label>
+                        <input type="text" required id="zip"/>
+                        
+                        <label for="country">Land</label>
+                        <input type="text" required id="country"/>
+                        
+                        <label for="tel">Telefoon</label>
+                        <input type="text" required id="tel"/>
+                    </fieldset>
+                    
+                    
+                
+        <fieldset>
+            <legend>Ik wil mij aanmelden:</legend>
+          <details>
+            <summary>Voor een project</summary>
+                
+                    <fieldset>
+                        <ol>
+                            <li><label for="titel">Titel</label>
+                            <input type="text" id="titel"/>
+                            </li>
+                            <li><label for="assignment">Opdrachtsomschrijving</label>
+                            <input type="text" id="assignment"/>
+                            </li>
+                            <li><label for="name">Doelgroepsomschrijving</label>
+                            <textarea name="textarea" rows="10" cols="80"></textarea>
+                            </li>
+                            <li><label for="goal">Doelstelling/ Intentie van het project</label>
+                            <input type="text" id="goal"/>
+                            </li>
+                            <li><label for="time">Looptijd</label>
+                            <input type="text" id="time"/>
+                            </li>
+                            <li><label for="deadline">Deadline</label>
+                            <input type="date" id="deadline"/>
+                            </li>
+                        </ol>
+    
+                        <label for="student">Geschikt voor:</label>
+                                <select id="student">
+                                    <option>eerstejaars studenten</option>
+                                    <option>tweedejaars studenten</option>
+                                    <option>derdejaars studenten</option>
+                                    <option>afstudeer studenten</option>
+                                    <option>onbekend</option>
+                                 </select>
+                         <button type="submit">Verzenden</button>
+                    </fieldset>
+                   
+        </details>
+
+
+        <details>
+             <summary>Als stagebedrijf</summary>
+            
+                    <fieldset>
+                        <label for="student">Geschikt voor</label>
+                                <select id="forwho">
+                                    <option>tweedejaars studenten</option>
+                                    <option>afstudeer studenten</option>
+                                    <option>onbekend</option>
+                                 </select>
+                    </fieldset>
+                     <fieldset>
+                            <ol>
+                                <li>Hoe lang is de stage? 
+                                    
+                                      <select id="timer">
+                                        <option>10 weken</option>
+                                        <option>20 weken</option>
+                                      
+                                     </select>
+                                    
+                                <li><label for="date">Begin datum</label>
+                                        <input type="date" id="date"/></li>
+                            </ol>
+                    </fieldset>   
+
+                    <fieldset>
+                        <ol>
+                            <li>Beschrijving werkzaamheden:
+                                <label for="work"></label>
+                                <input type="text" id="work"/>
+                            </li>
+                        </ol>
+                    </fieldset>
+                     <fieldset>
+                        <p>Beschrijving stagebedrijf</p>
+                        <ol>
+                            <li>
+                                <label for="company">Bedrijfsnaam</label>
+                                <input type="text" id="company"/>
+                            </li>
+                            <li>
+                                <label for="adresser">Adres</label>
+                                <input type="text" id="adresser"/>
+                            </li>
+                            <li>
+                                <label for="postal">Postcode</label>
+                                <input type="text" id="postal"/>
+                            </li>
+                            <li>
+                                <label for="place">Plaats</label>
+                                <input type="text" id="place"/>
+                            </li>
+                            <li>
+                                <label for="sector">Sector</label>
+                                <input type="text" id="sector"/>
+                            </li>
+                            <li>
+                                <label for="core">Core Business</label>
+                                <input type="text" id="core"/>
+                            </li>
+                        </ol>
+                         <button type="submit">Verzenden</button>
+                    </fieldset>
+           
+        </details>
+     </fieldset>   
+            </form>
+     
+               
+            
+
+            <aside>
+
+            </aside>
+
+            <footer>
+                <article>
+                    <h1>Sitemap</h1>
+
+                    
+                        <details>
+                        <summary>Opleiding</summary>
+                            <ul>
+                                <li>Visie & Beleid</li>
+                                <li>Opbouw Studieprogramma</li>
+                                <li>Competenties</li>
+                                <li>Diploma</li>
+                                <li>Beroepen</li>
+                            </ul>
+                        </details>
+                        <details>
+                        <summary>Onderwijsprogramma</summary>
+                            <ul>
+                                <li>Mededelingen</li>
+                                <li>Uitagenda</li>
+                                <li>Propedeuse</li>
+                                <li>Verdieping 1</li>
+                                <li>Verdieping 2</li>
+                                <li>Afstuderen</li>
+                            </ul>
+                        </details>
+                        <details>
+                        <summary>Organisatie</summary>
+                            <ul>
+                                <li>Contact</li>
+                                <li>Blog</li>
+                                <li>Docenten</li>
+                                <li>Onderwijsbureau</li>
+                                <li>Stagebureau</li>
+                                <li>Buitenlandbureau</li>
+                                <li>Examencommissie</li>
+                                <li>Decaan</li>
+                            </ul>
+                        </details>
+                        <details>
+                        <summary>Stages en Projecten</summary>
+                            <ul>
+                                <li>Stages</li>
+                                <li>Projecten</li>
+                            </ul>
+                        </details>
+                    
+                </article>
+                <article>
+                    <h1>Contact</h1>
+                    CMD Amsterdam
+                    Bezoekadres: Gebouw Theo Thijssenhuis (TTH), Wibautstraat 2-4, 1091 GM Amsterdam
+                    Postadres: Postbus 1025, 1000 BA Amsterdam
+                    Telefoon: 020 595 1855
+                    Email: <a href="#">info@cmd.hva.nl</a>
+                    RSS: <a href="#">Feed intranet</a>
+                </article>
+                <article>
+                    <h1>Zoeken</h1>
+                    <form>
+                        <input type="text">
+                        <input type="submit">
+                    </form>
+            </article>
+            <article>
+                <h1>About</h1>
+                CMD Amsterdam is een ontwerp opleiding voor Interactieve Media.
+                Op de opleiding Communication & Multimedia Design (CMD) Amsterdam leer je alles over het ontwerpen van online interactieve media. Dit betekent begrijpen, bedenken en maken van interactieve mediatoepassingen zoals websites, mobiele applicaties en interactieve televisie. 
+            <article>
+            </article>
+                <h1>Credits</h1>
+                © 2007 Hogeschool van Amsterdam - DMCI - CMD Amsterdam
+                <a href="#">Geef ons feedback</a>
+            </article>
+            </footer>
+        </section>
+        </body>
+</html>
+

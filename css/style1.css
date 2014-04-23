@@ -1,0 +1,424 @@
+* {
+	margin:0;
+	padding:0;
+	 -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html{
+	background: #c72;
+}
+
+body {
+   	font-weight: 300;
+	background: #fff;
+	font: 100%/1.5 helvetica;
+	max-width: 100%;
+	color: #333;
+	margin: 0 auto;
+}
+
+header{
+	background-color:black;
+	width:100%;
+	height: 15%;
+	position:relative;
+}
+
+header img{
+	max-width:100%;
+	margin:0.1em;
+
+}
+
+nav{
+	padding:1em;
+}
+
+nav ul li {
+  	display:inline;
+  	padding:0.5em;
+  	margin:2.3%;
+ 	background-color:none;
+}
+
+nav li a {
+	color: white;
+	font-size:100%;
+}
+
+nav ul{
+	display:inline;
+	position: relative;
+	margin-left:1%;
+	display:inline-table
+	list-style: none;
+}
+
+/*dropdown*/
+nav ul ul{
+	display:none;
+	position: absolute; top: 120%; left:13%;
+	width:20%;
+	background-color:black;
+	z-index:4;
+}
+
+nav ul ul li {
+		float: left; 
+		position: relative;
+	}
+
+nav ul li:hover > ul {
+		display: block;
+	}
+
+nav ul ul li:hover > ul {
+		display: block;
+	}
+
+a{
+	text-decoration:none;
+	color:#34B0D9;
+}
+
+a:hover { 
+	color:#EC6D19; 
+	-webkit-transition: all 0.4s;
+}
+
+h1, p {
+	margin: 0.9em 0;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 180%;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+h2 {
+	margin-bottom:1%;
+	margin-top:1%;
+	font-weight: bold;
+	font-size: 130%;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 120%;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+img{
+	width:100%;
+}
+
+/* only paragraphs direclty following an h1 */
+h1 + p {
+	margin: -1em 0 1em;
+}
+
+video{
+	max-width:90%;
+}
+
+/* border-radius:;
+If one value is set, this radius applies to all 4 corners.
+If two values are set, the first applies to top-left and bottom-right corner, the second applies to top-right and bottom-left corner.
+Four values apply to the top-left, top-right, bottom-right, bottom-left corner in that order.
+Three values: The second value applies to top-right and also bottom-left.*/
+
+
+fieldset {
+	border: 0;
+	border-radius: 5px 20px 5px;
+	box-shadow: inset 0 .1em .2em rgba(0,0,0,.4);
+	padding: 1em;
+}
+
+fieldset fieldset{
+	border-radius: .1em;
+}
+
+fieldset + fieldset {
+	margin: .5em 0 0;
+}
+
+details + details {
+	margin-top:1em;
+}
+
+/* content wrapper */
+body > section{
+	padding:0em 1em 1em 1em;
+	max-width:60em;
+	position: relative;
+	border:.1em; border-style:solid; border-color:black;
+	border-top:0em;
+	margin: 0 auto;
+	overflow: auto;
+}
+/* articles */
+section article{
+	max-width:70%;
+	float:left;
+	font: 100% avenir;
+}
+
+/* footer */
+section footer{
+	display:block;
+	max-width:100%;
+	clear:both;
+	font-size:0.8em;
+}
+
+
+section footer article{
+	max-width:22%;
+	margin-left:4%;
+}
+
+section footer ul{
+	margin-left:10%;
+	list-style-type: none;
+}
+
+section footer form{
+	max-width:90%;
+}
+
+section footer form input:nth-child(2){
+	max-width:7%;
+	position:absolute;	
+}
+
+/*sidebar */
+section aside {
+	max-width: 19%;
+	margin-left: 80%;
+	margin-top:1.5em;
+	font-size:0.7em;
+}
+
+aside h1 {
+	font-size:120%;
+}
+
+/* fieldset header */
+legend {
+	padding: 0;
+	font-size: 100%;
+	position: relative; right: .2em;
+	background-color:white;
+	margin-bottom:.1em;
+	border-width:.2em;
+	border-color:white;
+	border-style:solid;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	box-shadow: 0 0.5em 0.625em -0.625em black;
+}
+/* any ol that directly follows legend */
+legend + ol {
+	padding: 2em 0 0;
+	list-style: none;
+}
+
+/* any li that is a direct child of ol */
+ol > li {
+	padding: .5em;
+	margin: 0;
+	margin-left: 1.5em;
+}
+
+[for="naam"]:after,
+[for="email"]:after {
+	content: " *";
+	color: red;
+}
+
+input {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;	/* puts input field with padding and border inside the box */
+	font-size: 100%;
+	border-radius: .2em;
+	box-shadow: inset 0 .1em .2em rgba(0,0,0,.4);
+	border: none;
+	transition: .5s;
+	margin: .3em 0;
+	padding: .2em;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 100%;
+	border-radius: .2em;
+	box-shadow: inset 0 .1em .2em rgba(0,0,0,.4);
+	border: none;
+	transition: .5s;
+	margin: .3em 0;
+	padding: .2em;
+	resize: none;
+}
+
+input:hover {
+	padding: .4em .2em;
+}
+input:focus {
+	box-shadow: inset .1em .1em .1em rgba(0,0,0,.0),
+}
+
+/*stage*/
+form {
+	margin: 1em 0;
+	max-width: 100%;
+}
+
+article:nth-of-type(2) { 				/* rechtergetal is waar begin je,  2n is startpunt +2 is elke tweede daarna (2n +2) */
+	color: black; 
+}
+
+
+h1 + p {
+	margin: -1em 0 1em;
+}
+
+p + p {
+	margin: 0em 0 1em;
+	text-indent: 1.5em;
+}
+
+
+nav select {
+  display: none;
+  margin-left:20%;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 489px) {
+/* Styles */
+	nav ul { display:none;}
+	nav select { display:inline-block;}
+
+}
+
+@media screen and (max-width:795px) {
+	
+	header{
+		height:13em;
+	}
+	
+		
+	nav{
+		padding:.3em;
+	}
+	
+	
+	nav ul li {
+		display:inline;
+		padding-top:3em;
+		margin:0.5%;
+		font-size:85%;
+	}
+
+	/* footer */
+	section footer{
+		display:inline;
+		max-width:100%;
+		clear:both;
+	}
+	
+	
+	section footer article + article{
+		max-width:100%;
+		margin-left:1%;
+	}
+	
+		section footer article details ul{
+		max-width:100%;
+		margin:1.5% 0% 0% 5%;
+	}
+	
+	section footer article:first-of-type{
+		min-width:100%;
+		margin-left:1%;
+	}
+	
+	
+	section footer form{
+		max-width:90%;
+	}
+	
+	section footer form input:nth-child(2){
+		max-width:9%;
+		position:absolute;	
+		float:right;
+	}
+
+
+	  aside {
+		display: inline;
+	  }
+	  
+	  aside section{
+		  max-width:46%;
+		  float:left;
+		  margin-right:3%;
+	  }
+	  
+	  section article {
+		max-width: 100%;
+	  }
+}
+
+@media screen and (max-width:560px) {
+	
+	nav{
+		padding:1.5em;
+	}
+	
+	
+	header img {
+		display:none;
+	}
+	
+	header{
+		height:4em;
+	}
+	
+	nav ul li {
+		display:inline;
+		padding:0.3em;
+		margin:0.3%;
+		font-size:73%;
+	}
+	
+	/*dropdown*/
+	nav ul ul{
+		display:none;
+		position: absolute; top: 120%; left:10%;
+		width:18%;
+		background-color:black;
+		z-index:4;
+	}
+	
+  section article {
+  	max-width: 100%;
+  }
+}
+
+/* modernizr */
+.no-boxshadow {
+    /* styles for browsers that don't support box-shadow */
+    border-style:solid;
+    border-color:black;
+    border-bottom-width:2em;
+}
+
